@@ -1,0 +1,35 @@
+a{
+    font: bold 20px "Comic Sans MS";
+    text-decoration:none;
+    color: #000;
+    height: 30px;
+}
+
+a:hover {
+    color: white;
+}
+
+.logo {
+    float: left;
+}
+
+#header {
+    background-color: #C5F0A4;
+    text-align: right;
+    height: 50px;
+}
+
+#header ul {
+    margin: 0;
+    padding: 10px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+#header ul li {
+    display: inline-block;
+    margin: 0 10px;
+    list-style-type: none;
+    font: 20px "Lucida Grande";
+}

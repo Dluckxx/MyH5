@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #E7F5F2;
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    height: 2px;
+    background-color: #D0D0D0;
+}
+
+#container {
+    margin: auto;
+}
+
+#container h2 {
+    display: inline;
+}

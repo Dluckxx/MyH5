@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable</title>
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+		table {
+			display: block;
+			text-align: center;
+			background-color: white;
+			border-collapse: collapse;
+			table-layout: fixed;
+			width: 100%;
+		}
+
+		table tbody {
+			display: block;
+			margin: 0;
+			border: 0;
+			width: 100%;
+		}
+
+		td, th {
+			width: 400px;
+		}
+
+		.course {
+			background-color: #4bbb8b;
+			border-radius: 10px;
+			font-size: 8px;
+		}
+
+		.experiment {
+			background-color: #c4f0c5;
+			border-radius: 10px;
+			font-size: 8px;
+		}
+
+		.rest {
+			background-color: #E7F5F2;
+		}
+
+		.time {
+			background-color: #E7F5F2;
+			width: 100px;
+		}
+
+		#timetable li {
+			width: 100%;
+			height: 60px;
+			background: #00A2CA;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		#container {
+			margin: 0;
+			border: 0;
+			padding: 0;
+			text-align: right;
+		}
+
+		#week {
+			background-color: #E7F5F2;
+		}
+	</style>
+</head>
+<body>
+<div id="header">
+    <a href="index.html">
+        <img class="logo" src="images/logo/logo50.png" height="50" width="50"/>
+    </a>
+    <ul>
+        <li>
+            <a href="timetable.html">timetable</a>
+        </li>
+        <li>
+            <a href="plan.html">plan</a>
+        </li>
+		<li>
+			<a href="timetable_2.html">Bay</a>
+		</li>
+    </ul>
+</div>
+<hr>
+<div id="container">
+    <table cellpadding="4px" cellspacing="0px">
+        <tbody>
+        <tr id="week">
+            <th class="time">Time</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        <tr>
+            <td class="time">8:00</td>
+            <td class="course" rowspan="2">毛概<br>10-B209</td>
+			<td class="course" rowspan="2">3ds MAX<br>10-B208</td>
+			<td class="course" rowspan="2">毛概<br>10-A202</td>
+            <td></td>
+            <td></td>
+			<td></td>
+		</tr>
+        <tr>
+            <td class="time">9:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">10:00
+            <td class="experiment" rowspan="2">广告创意<br>10-A203</td>
+            <td></td>
+			<td class="course" rowspan="2">策划原理<br>10-A101</td>
+			<td class="course" rowspan="2">图形创意<br>1-610</td>
+			<td class="course" rowspan="2">体育实训<br>1区运动场</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">11:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="rest">
+            <td class="time">12:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="rest">
+            <td class="time">13:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">14:00</td>
+            <td class="course" rowspan="2">图形创意<br>艺术楼2-04-01</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+            <td class="experiment" rowspan="2">3ds MAX<br>10-B307</td>
+        </tr>
+        <tr>
+            <td class="time">15:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">16:00</td>
+            <td class="course" rowspan="2">图形创意<br>艺术楼2-04-01</td>
+            <td></td>
+            <td></td>
+            <td class="course" rowspan="2">形势与政策<br>逸夫楼</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">17:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="rest">
+            <td class="time">18:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">19:00</td>
+			<td class="course" rowspan="3">食品功能与保健<br>10-A302</td>
+			<td></td>
+			<td class="experiment" rowspan="3">策划原理 1-123<br>广告创意 艺术楼4-405</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">20:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">21:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="rest">
+            <td class="time">22:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr>
+</body>
+</html>
